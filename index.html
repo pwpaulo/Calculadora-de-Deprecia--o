@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Calculadora de Depreciação</title>
+</head>
+<body>
+    <main>
+    <div class = "all">
+        <h1>Calculadora de Depreciação</h1>
+        <div class= "adiv">
+            <p>Valor equipamento:</p>
+            <input type="number" placeholder=" inserir valor do equipamento" class="inputs" id= "valorEquipamento">
+        </div><br>
+
+        <div class= "adiv">
+            <p>Valor sucata:</p>
+            <input type="number" placeholder=" inserir valor da sucata" class="inputs" id= "valorSucata">
+        </div><br>
+
+        <div class= "adiv">
+            <p>Vida útil:</p>
+            <input type="number" placeholder=" inserir vida útil em anos" class="inputs" id= "vidaUtil">
+        </div><br>
+
+        <div class= "adiv">
+            <p>Tempo de uso:</p>
+            <input type="number" placeholder=" inserir tempo de uso" class="inputs" id= "tempoDeUso">
+        </div>
+
+        <div class="imga">
+            <img src="assets/img/arrow down.png" alt="Seta para baixo" width="100" height="100">
+        </div>
+        
+        <input type="submit" onclick="calcular()" role= "button" class="button-6" id="submit"><br>
+
+    </div><br>
+    <div class = "all2">
+        <div class="adiv">
+            <p>Valor depreciado:</p>
+            <input type="number" class="inputs" id="valorDepreciado" readonly>
+        </div>
+        <script src="js/script.js"></script>
+    </div>
+    </main>
+</body>
+</html>
